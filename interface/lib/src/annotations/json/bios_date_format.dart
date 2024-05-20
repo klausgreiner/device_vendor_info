@@ -15,7 +15,7 @@ final class BiosDateFormatConverter
   const BiosDateFormatConverter();
 
   @override
-  DateTime? fromJson(String? json) => biosDateFormat.tryParse(json ?? "");
+  DateTime? fromJson(String? json) => DateTime.parse(json ?? "");
 
   @override
   String? toJson(DateTime? object) =>
